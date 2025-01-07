@@ -27,7 +27,7 @@ SimpleVector<T>::~SimpleVector()
 template<typename T>
 void SimpleVector<T>::push_back(const T& value)
 {
-	if (idx == capacity)
+	if (idx == currentSize)
 		return;
 
 	data[idx] = value;
